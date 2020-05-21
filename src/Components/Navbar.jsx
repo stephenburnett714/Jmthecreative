@@ -21,8 +21,8 @@ export default function Navbar() {
             </div>
 
             <div className="nav-title-container">
-                <div className="nav-title"><Link
-                    className="nav-title"
+                <div><Link
+                    className="nav-title nav-bold"
                     activeClass="active"
                     to="home"
                     spy={true}
@@ -31,7 +31,7 @@ export default function Navbar() {
                     duration={500}
                 >Home</Link></div>
 
-                <div className="nav-title"><Link
+                <div><Link
                     className="nav-title"
                     activeClass="active"
                     to="about"
@@ -41,7 +41,7 @@ export default function Navbar() {
                     duration={500}
                 >About</Link></div>
 
-                <div className="nav-title"><Link
+                <div><Link
                     className="nav-title"
                     activeClass="active"
                     to="solutions"
@@ -49,10 +49,10 @@ export default function Navbar() {
                     smooth={true}
                     offset={-100}
                     duration={500}
-                >Solutions</Link></div>
+                >Dribble</Link></div>
 
 
-                <div className="nav-title"><Link
+                <div><Link
                     className="nav-title"
                     activeClass="active"
                     to="contact"
@@ -60,7 +60,17 @@ export default function Navbar() {
                     smooth={true}
                     offset={-20}
                     duration={500}
-                >Contact</Link></div>
+                >Work</Link></div>
+
+                <div><Link
+                    className="nav-title"
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-20}
+                    duration={500}
+                ><button className="nav-bar-button">Contact</button></Link></div>
 
                 <Burger />
             </div>

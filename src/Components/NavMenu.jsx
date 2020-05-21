@@ -6,7 +6,8 @@ import styled from 'styled-components'
 const Ul = styled.ul`
 list-style: none;
 display: flex;
-flex-flow: row wrap;
+justify-content: center;
+
 
 li {
     padding: 18px 10px;
@@ -32,6 +33,7 @@ display: none;
     margin: 0;
     padding-top: 12vh;
     transition: transform .3s ease-in-out;
+
 }
 
 `;
@@ -58,19 +60,6 @@ export default function NavMenu(props) {
             open={props.open} 
             setOpen={props.setOpen}
                 activeClass="active"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                onClick = {() => props.setOpen(!props.open)}
-                >
-                
-                <li>Home</li>
-            </Link>
-
-            <Link
-                activeClass="active"
                 to="about"
                 spy={true}
                 smooth={true}
@@ -78,22 +67,36 @@ export default function NavMenu(props) {
                 duration={500}
                 onClick = {() => props.setOpen(!props.open)}
                 >
+                
                 <li>About</li>
             </Link>
 
             <Link
                 activeClass="active"
-                to="solutions"
+                to="dribble"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={500}
                 onClick = {() => props.setOpen(!props.open)}
                 >
-                 <li>Solutions</li>
+                <li>Dribble</li>
             </Link>
 
             <Link
+                activeClass="active"
+                to="work"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick = {() => props.setOpen(!props.open)}
+                >
+                 <li>Work</li>
+            </Link>
+
+            <Link
+            
                 activeClass="active"
                 to="contact"
                 spy={true}
@@ -102,7 +105,7 @@ export default function NavMenu(props) {
                 duration={500}
                 onClick = {() => props.setOpen(!props.open)}
                 >
-                <button>Contact</button>
+                <button className="nav-bar-button">Contact</button>
             </Link>
         </Ul>
     )
