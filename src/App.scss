@@ -12,9 +12,16 @@
 ////////////// Multi Use /////////////
 /////////////////////////////////////
 
-.title-font {
+.title-font-black {
   font-size: 60px;
   font-weight: bold;
+  color: black;
+}
+
+.title-font-white {
+  font-size: 60px;
+  font-weight: bold;
+  color:white;
 }
 
 .text-font {
@@ -31,6 +38,7 @@
 display: flex;
 flex-direction: row;
 padding: 3vw 10vw;
+max-width: 100vw;
 }
 
 .nav-title {
@@ -75,13 +83,11 @@ padding: 3vw 10vw;
 }
 
 .home-main-img-container{
-max-width: 100%;
+  display: grid;
+  width: 100vw;
+  margin: 0;
 }
 
-.about-img {
-  max-width: 100%;
-  height: auto;
-}
 
 .home-contact-button {
   font-size: 16px;
@@ -89,15 +95,33 @@ max-width: 100%;
   background-color: rgb(35, 148, 250);
   border-radius: 2px;
   border: none;
-  padding: 5px 20px;
+  padding: 10px 20px;
 }
+
+.home-main-picture {
+  max-width: 100%;
+  max-height: auto;
+  margin: 0;
+}
+
 
 ///////////////////////////////////////
 ////////////// About /////////////////
 /////////////////////////////////////
 
+.about-top-line {
+  color: rgba(0,0,0,.5);
+  font-size: 12px;
+}
+
+.about-header {
+  font-size: 36px;
+}
 
 
+///////////////////////////////////////
+////////////// Dribble ///////////////
+/////////////////////////////////////
 
 .dribble {
   width: 100vw;
