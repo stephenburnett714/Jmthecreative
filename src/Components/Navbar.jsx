@@ -1,40 +1,30 @@
 import React from 'react'
 import { Link } from "react-scroll";
 import Burger from "./Burger"
-import jmthcreative from '../Images/jmthcreative.png'
+import jmlogo from '../Images/jmlogowhite.png'
 
 
 export default function Navbar() {
 
     return (
-        <div className="nav-bar" id="navbar">
+        <div className="flex flex-row align-items-center bg-black pt-4 pb-4 justify-between" id="navbar">
 
-            <div className="nav-bar-logo-container"><Link
+            <div className="ml-32 nav-bar-logo-container"><Link
                 activeClass="active"
                 to="home"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={500}>
-                <img className="nav-bar-logo" src={jmthcreative} alt="logo" />
+                <img className="nav-bar-logo" src={jmlogo} alt="logo" />
             </Link>
             </div>
 
-            <div className="nav-title-container">
+            <div className="flex flex-row text-gray-400">
                 <div><Link
-                    className="nav-title nav-bold"
+                    className="pr-20"
                     activeClass="active"
                     to="home"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}
-                >Home</Link></div>
-
-                <div><Link
-                    className="nav-title"
-                    activeClass="active"
-                    to="about"
                     spy={true}
                     smooth={true}
                     offset={-100}
@@ -42,35 +32,36 @@ export default function Navbar() {
                 >About</Link></div>
 
                 <div><Link
-                    className="nav-title"
+                    className="pr-20"
                     activeClass="active"
-                    to="solutions"
+                    to="about"
                     spy={true}
                     smooth={true}
                     offset={-100}
                     duration={500}
-                >Dribble</Link></div>
-
-
-                <div><Link
-                    className="nav-title"
-                    activeClass="active"
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-20}
-                    duration={500}
                 >Work</Link></div>
 
+
+
                 <div><Link
-                    className="nav-title"
+                    className="pr-20"
                     activeClass="active"
                     to="contact"
                     spy={true}
                     smooth={true}
                     offset={-20}
                     duration={500}
-                ><button className="nav-bar-button">Contact</button></Link></div>
+                >Process</Link></div>
+
+                <div><Link
+                    className="nav-title"
+                    activeClass=""
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-20}
+                    duration={500}
+                ><button className="bg-blue-500 p-1 rounded-md mr-32 text-white">Book a call</button></Link></div>
 
                 <Burger />
             </div>
