@@ -13,7 +13,7 @@ const Footer = () => {
             and make better decisions quickly about product design and user
             experiences.
           </div>
-          <div className="flex justify-center content-center"><button className="bg-blue-400 w-32 rounded">Book a call</button></div>
+          <div className="flex justify-center content-center"><button className="bg-blue-400 p-2 rounded">Book a call</button></div>
         </div>
         <div className="flex flex-row justify-center content-center">
           <div><img src={jmcircle} alt="" /></div>
