@@ -17,7 +17,7 @@ z-index: 20;
 div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? 'royalblue' : 'black'};
+    background-color: ${({ open }) => open ? 'black' : 'white'};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all linear .3s;
@@ -37,7 +37,7 @@ div {
     }
 }
 
-@media screen and (min-width: 800.1px){
+@media screen and (min-width: 1023.1px){
   display: none
 }
 `;

@@ -3,6 +3,7 @@ import Home from './Home'
 import About from './About'
 import Work from './Work'
 import Process from './Process'
+import '../styles/styles.scss'
 import { Route } from 'react-router-dom'
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 import styled from 'styled-components'
 
 
@@ -11,16 +11,16 @@ justify-content: center;
 
 li {
     padding: 18px 10px;
-    font-size: xx-large
+    font-size: xx-large;
 }
 
 
-@media (min-width: 800px){ 
+@media (min-width: 1023px){ 
 display: none;
 }
 
 
-@media (max-width: 800.1px){ 
+@media (max-width: 1023.1px){ 
     
     flex-flow: column nowrap;
     background-color: white;
@@ -41,72 +41,28 @@ display: none;
 export default function NavMenu(props) {
     return (
         <Ul open={props.open}>
-            <Link
-            open={props.open} 
-            setOpen={props.setOpen}
-                activeClass="active"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                onClick = {() => props.setOpen(!props.open)}
-                >
-                
+            <NavLink  exact to={'/'}>
                 <li>Home</li>
-            </Link>
+            </NavLink>
 
-            <Link
-            open={props.open} 
-            setOpen={props.setOpen}
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                onClick = {() => props.setOpen(!props.open)}
-                >
-                
+            <NavLink  exact to={'/about'}>
                 <li>About</li>
-            </Link>
+            </NavLink>
 
-            <Link
-                activeClass="active"
-                to="dribble"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                onClick = {() => props.setOpen(!props.open)}
+            <NavLink exact to={'/work'}
                 >
-                <li>Dribble</li>
-            </Link>
+                <li>Work</li>
+            </NavLink>
 
-            <Link
-                activeClass="active"
-                to="work"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                onClick = {() => props.setOpen(!props.open)}
+            <NavLink exact to={'/process'}
                 >
-                 <li>Work</li>
-            </Link>
+                 <li>Process</li>
+            </NavLink>
 
-            <Link
-            
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                onClick = {() => props.setOpen(!props.open)}
+            <NavLink to={'/'}
                 >
-                <button className="nav-bar-button">Contact</button>
-            </Link>
+                <button className="call-color p-1 rounded-md mr-32 text-white">Contact</button>
+            </NavLink>
         </Ul>
     )
 }

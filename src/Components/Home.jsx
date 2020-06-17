@@ -6,8 +6,14 @@ import jmexplosion from "../Images/jmexplosion.png";
 import jmthumb from "../Images/jmthumb.png";
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
 
 const Home = () => {
+
+useEffect(() => {
+  window.scrollTo(0, 0);
+});
+
   return (
     <div>
       <Navbar />
@@ -15,36 +21,36 @@ const Home = () => {
         {/* ________________ */}
         {/* Your “go-to” guy */}
         {/* ________________ */}
-        <div className="flex flex-row bg-black text-white p-32">
-          <div>
-            <div className="text-6xl">Your “go-to” guy for UX Design</div>
-            <div className="text-2xl">
+        <div className="flex flex-col lg:flex-row bg-black text-white pt-24 pb-10 px-12 lg:py-32 lg:px-32">
+          <div className="md:w-3/5">
+            <div className="text-4xl pb-4 lg:text-6xl">Your “go-to” guy for UX Design</div>
+            <div className="text-xl lg:text-2xl pb-4">
               Helping startup founders to design thoughtful digital products
               that ensure a high quality user experience.
             </div>
             <div>
-              <button className="bg-blue-400 p-2 rounded-md mr-32 text-white">
+              <button className="call-color p-2 rounded-md lg:mr-32 text-white">
                 Book a call
               </button>
             </div>
-            <div className="flex flex-row align-items-center">
-              <div>
+            <div className="pt-4 flex flex-row align-items-center">
+              <div className="pr-3">
                 <img src={jmcircle} alt="" />
               </div>
               <div>working: check calendar for availability</div>
             </div>
           </div>
-          <div>
+          <div className="flex justify-center">
             <img src={jmwink} alt="" />
           </div>
         </div>
         {/* ___________________ */}
-        {/* personal consultant */}
+        {/* Personal Consultant */}
         {/* ___________________ */}
-        <div className="bg-white text-black">
-          <div className="grid md:grid-cols-2">
-            <div className="flex flex-col justify-center content-center">
-              <div className="text-4xl">Your personal consultant</div>
+        <div className="bg-white text-black px-12 lg:px-32 pt-16">
+          <div className="md:grid md:grid-cols-2">
+            <div className="flex flex-col justify-center content-center md:w-4/5">
+              <div className="text-4xl pb-4">Your personal consultant</div>
               <div className="text-xl">
                 1-on-1 engagements with a professional designer that will help
                 you to solve critical problems for you in your business and map
@@ -57,17 +63,17 @@ const Home = () => {
           </div>
         </div>
         {/* _____________ */}
-        {/* User-centered */}
+        {/* User-Centered */}
         {/* _____________ */}
         <div className="grid md:grid-cols-2">
-          <div className="p-32">
+          <div className="py-32">
             <div className="text-4xl">Keeping things user-centered</div>
             <div className="text-xl">
               Great User Experience is a product of really good design, it is
               something that is functional and emotionally satisfying.
             </div>
           </div>
-          <div className="p-32">
+          <div className="py-32">
             <div className="text-xl">
               Benefit from building user base of brand advocates
             </div>
@@ -89,18 +95,18 @@ const Home = () => {
         {/* Tangible Results */}
         {/* ________________ */}
         <div className="grid md:grid-cols-2">
-          <div className="p-32">
+          <div className="py-32">
             <div className="text-4xl">Turning ideas into tangible results</div>
             <div className="text-xl">
               From napkin sketch to digital prototype and everything in between.
               An iterative design process that ensures high quality UX as an
               explicit outcome.
             </div>
-            <NavLink exact to="/process">
+            <NavLink exact activeClass="active" to="/process">
               <div className="text-blue-500">View UX Process</div>
             </NavLink>
           </div>
-          <div className="p-32">
+          <div className="py-32">
             <img src={jmexplosion} alt="" />
           </div>
         </div>
@@ -109,7 +115,7 @@ const Home = () => {
         {/* JM The Creative  */}
         {/* ________________ */}
         <div className="grid md:grid-cols-2">
-          <div className="p-32">
+          <div className="py-32">
             <div className="text-4xl">JM The Creative</div>
             <div className="text-xl">
               With 5+ years of experience in helping founders to communicate
@@ -118,11 +124,11 @@ const Home = () => {
               journey through a web/mobile app experience with the intention of
               increasing the quality of the user interaction.
             </div>
-            <NavLink exact to="./about">
+            <NavLink exact activeClass="active" to="./about">
               <div className="text-blue-500">More About JM</div>
             </NavLink>
           </div>
-          <div className="p-32">
+          <div className="py-32">
             <img src={jmthumb} alt="" />
           </div>
         </div>

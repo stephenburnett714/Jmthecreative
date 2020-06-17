@@ -1,55 +1,86 @@
 import React from "react";
-import { Card } from "react-bootstrap";
-import HomePicture from "../Images/HomePicture.png";
-import Card1 from "../Images/Card1.png"
-
+import Navbar from "./Navbar";
+import gymmly from "../Images/gymmly.png";
+import unirever from "../Images/unirever.png";
+import optimal from '../Images/optimal.png'
+import piton from '../Images/piton.png'
+import { useEffect } from "react";
 
 const Work = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div>
-      <div>Work</div>
-      <div className="title-font-black">Case Studies</div>
+      <Navbar />
+      <div className="px-32 py-10">
+      <div className="text-6xl">Case Studies</div>
       <div>
-        <div>
-          These are my thoughts behind the process of designing some recent
-          projects that I’ve worked on for startups. Scrum style explanation of
-          projects.
-        </div>
+        Examples of recent projects that I've worked on for startups where I've
+        made ideas tangible.
       </div>
-
-      <Card className="h-100 shadow-sm bg-white rounded">
-        <div>Connecting mind, body and community.</div>
-        <div>
-          Connect through a group messenger app to grow a fitness community
-          anytime you need support
+      <div className="grid grid-cols-2">
+        <div className="flex flex-row shadow-lg p-2 rounded-lg m-4">
+          <div>
+            <div className="text-4xl">Gymmly</div>
+            <div>
+              Connect through a group messenger app to grow a fitness community
+              anytime you need support
+            </div>
+            <div>Read case</div>
+          </div>
+          <div>
+            <img className="w-auto" src={gymmly} alt="" />
+          </div>
         </div>
         
 
+        <div className="flex flex-row shadow-lg p-2 rounded-lg m-4">
+          <div>
+            <div className="text-4xl">Unirever</div>
+            <div>
+              Connect through a group messenger app to grow a fitness community
+              anytime you need support
+            </div>
+            <div>Read case</div>
+          </div>
+          <div>
+            <img src={unirever} alt="" />
+          </div>
+        </div>
+        
 
-        <div>Read case</div>
-        <Card.Img variant="top" src="../Images/Card1.png"/>
-      </Card>
-
-      <div>
-        <div>
-          <div>Optimal Price — </div>
-          <div>Guerrilla User Research</div>
-          <div>Read case</div>
-          <img src="" alt="" />
+        <div className=" grid grid-cols-2 shadow-lg p-2 rounded-lg m-4">
+          <div>
+            <div className="text-4xl">Piton App</div>
+            <div>
+              Connect through a group messenger app to grow a fitness community
+              anytime you need support
+            </div>
+            <div>Read case</div>
+          </div>
+          <div>
+            <img src={piton} alt="" />
+          </div>
         </div>
 
-        <div>
-          <div>UniRever — </div>
-          <div>E-Commerce Dash UI</div>
-          <div>Read case</div>
-          <img src="" alt="" />
+
+       <div className="flex flex-row shadow-lg p-2 rounded-lg m-4">
+          <div>
+            <div className="text-4xl">Optimal Price</div>
+            <div>
+              Connect through a group messenger app to grow a fitness community
+              anytime you need support
+            </div>
+            <div>Read case</div>
+          </div>
+          <div>
+            <img src={optimal} alt="" />
+          </div>
         </div>
 
-        <div>
-          <div>Piton — </div>
-          <div>Voice UI Prototype</div>
-          <div>Read case</div>
-          <img src="" alt="" />
         </div>
       </div>
     </div>
