@@ -23,7 +23,7 @@ const Footer = () => {
             <div>
               <img src={jmcircle} alt="" />
             </div>
-            <div className="self-center">
+            <div className="pl-3 self-center">
               working: check calendar for availability
             </div>
           </div>
