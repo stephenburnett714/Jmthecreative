@@ -41,8 +41,8 @@ const About = () => {
             consulting companies that want to scale their design capacity.
           </div>
         </div>
-        <div className="px-16 lg:px-0">
-          <img src={jmpen} alt="" />
+        <div className="px-16 lg:px-0 flex justify-center lg:flex-none">
+          <div><img src={jmpen} alt="" /></div>
         </div>
       </div>
       {/* _______________ */}
@@ -60,8 +60,8 @@ const About = () => {
               <li>An artist that draws and illustrates in his downtime</li>
           </div>
         </div>
-        <div>
-          <img src={jmdrawing} alt="" />
+        <div className="flex justify-end">
+          <div><img src={jmdrawing} alt="" /></div>
         </div>
       </div>
     </div>

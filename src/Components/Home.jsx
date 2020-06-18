@@ -151,22 +151,25 @@ const Home = () => {
         {/* ________________ */}
         {/* JM The Creative  */}
         {/* ________________ */}
-        <div className="grid md:grid-cols-2">
-          <div className="py-32">
-            <div className="text-4xl">JM The Creative</div>
-            <div className="text-xl">
-              With 5+ years of experience in helping founders to communicate
-              their vision for digital products. Jonathan leverages
-              user-centered design approaches that focus on improving the user
-              journey through a web/mobile app experience with the intention of
-              increasing the quality of the user interaction.
+        <div className="px-12 lg:px-32 pt-16 pb-32">
+          <div className="md:grid md:grid-cols-2">
+            <div className="flex flex-col justify-center content-center md:w-4/5">
+              <div>
+                <div className="text-4xl pb-4">
+                JM The Creative
+                </div>
+                <div className="text-xl pb-4">
+                With 5+ years of experience in helping founders to communicate their vision for digital products. Jonathan leverages user-centered design approaches that focus on improving the user journey through a web/mobile app experience with the intention of increasing the quality of the user interaction.
+                </div>
+                <NavLink exact activeClass="active" to="/about">
+                  <div className="text-blue-500">More About JM</div>
+                </NavLink>
+              </div>
             </div>
-            <NavLink exact activeClass="active" to="./about">
-              <div className="text-blue-500">More About JM</div>
-            </NavLink>
-          </div>
-          <div className="py-32">
-            <img src={jmthumb} alt="" />
+
+            <div className="flex justify-center md:justify-end">
+              <img src={jmthumb} alt="" />
+            </div>
           </div>
         </div>
       </div>

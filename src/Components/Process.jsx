@@ -122,6 +122,7 @@ const Process = () => {
         {/*  Page Data   */}
         {/* ____________ */}
         <div>
+          {/* R & D */}
           <div id="Research/Discovery" className="lg:grid lg:grid-cols-2 py-16">
             <div className="flex flex-col justify-center lg:flex-none lg:pr-20">
               <div className="text-4xl pb-4">Research/ Discovery</div>
@@ -132,10 +133,12 @@ const Process = () => {
                 problem.
               </div>
             </div>
-            <div className="lg:pl-20">
-              <img src={RDLarge} alt="" />
+            <div className="flex justify-center lg:justify-end pt-4 lg:pt-0">
+              <div><img src={RDLarge} alt="" /></div>
             </div>
           </div>
+
+          {/* Ideation */}
 
           <div id="Ideation" className="lg:grid lg:grid-cols-2 py-16">
             <div className="flex flex-col justify-center lg:flex-none lg:pr-20">
@@ -147,15 +150,17 @@ const Process = () => {
                 to the problem.
               </div>
             </div>
-            <div className="lg:pl-20">
-              <img src={IdeationLarge} alt="" />
+            <div className="flex justify-center lg:justify-end pt-4 lg:pt-0">
+              <div><img src={IdeationLarge} alt="" /></div>
             </div>
           </div>
+
+          {/* HIFI */}
 
           <div id="Hifi" className="lg:grid lg:grid-cols-2 py-16">
             <div className="flex flex-col justify-center lg:flex-none lg:pr-20">
               <div className="text-4xl pb-4">Hi-Fi Design/ Prototyping</div>
-              <div>
+              <div >
                 This is the phase where Jonathan gets hands on with designing
                 high fidelity visuals for your product. High fidelity visuals
                 may be delivered in the form of pixel perfect screen designs,
@@ -163,10 +168,12 @@ const Process = () => {
                 through prototypes.
               </div>
             </div>
-            <div className="lg:pl-20">
-              <img src={HifiLarge} alt="" />
+            <div className="flex justify-center lg:justify-end pt-4 lg:pt-0">
+              <div><img src={HifiLarge} alt="" /></div>
             </div>
           </div>
+
+          {/* Development */}
 
           <div id="Development" className="lg:grid lg:grid-cols-2 py-16">
             <div className="flex flex-col justify-center lg:flex-none lg:pr-20">
@@ -177,10 +184,12 @@ const Process = () => {
                 Android, or Web based applications.
               </div>
             </div>
-            <div className="lg:pl-20">
-              <img src={DevelopmentLarge} alt="" />
+            <div className="flex justify-center lg:justify-end pt-4 lg:pt-0">
+              <div><img src={DevelopmentLarge} alt="" /></div>
             </div>
           </div>
+
+          {/* Measure */}
 
           <div id="Measure" className="lg:grid lg:grid-cols-2 py-16">
             <div className="flex flex-col justify-center lg:flex-none lg:pr-20">
@@ -192,8 +201,8 @@ const Process = () => {
                 experience for the end-user.
               </div>
             </div>
-            <div className="lg:pl-20">
-              <img src={MeasureLarge} alt="" />
+            <div className="flex justify-center lg:justify-end pt-4 lg:pt-0">
+              <div><img src={MeasureLarge} alt="" /></div>
             </div>
           </div>
         </div>
