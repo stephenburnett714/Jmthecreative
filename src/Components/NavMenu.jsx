@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components'
+import jmlogo from "../Images/jmlogoblack.png";
 
 
 const Ul = styled.ul`
@@ -11,7 +12,7 @@ justify-content: center;
 
 li {
     padding: 18px 10px;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 
@@ -31,9 +32,8 @@ display: none;
     height: 100vh;
     width: 100vw;
     margin: 0;
-    padding-top: 12vh;
+    align-items:center;
     transition: transform .3s ease-in-out;
-
 }
 
 `;
@@ -41,27 +41,28 @@ display: none;
 export default function NavMenu(props) {
     return (
         <Ul open={props.open}>
+            <img className="top-0 left-0" src={jmlogo} alt=""/>
             <NavLink  exact to={'/'}>
-                <li>Home</li>
+                <li className="text-black">Home</li>
             </NavLink>
 
             <NavLink  exact to={'/about'}>
-                <li>About</li>
+                <li className="text-black">About</li>
             </NavLink>
 
             <NavLink exact to={'/work'}
                 >
-                <li>Work</li>
+                <li className="text-black">Work</li>
             </NavLink>
 
             <NavLink exact to={'/process'}
                 >
-                 <li>Process</li>
+                 <li className="text-black">Process</li>
             </NavLink>
 
             <NavLink to={'/'}
                 >
-                <button className="call-color p-1 rounded-md mr-32 text-white">Contact</button>
+                <button className=" call-color p-1 rounded-md text-white">Contact</button>
             </NavLink>
         </Ul>
     )

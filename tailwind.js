@@ -231,6 +231,10 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
+      neue: [
+        '"Helvetica Neue"'
+      ],
+      
       sans: [
         'system-ui',
         '-apple-system',

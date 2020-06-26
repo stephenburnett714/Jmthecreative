@@ -41,7 +41,7 @@ const Process = () => {
             offset={-50}
             duration={500}
           >
-            <div className=" cursor-pointer flex flex-col px-4 py-10 shadow w-40 h-auto rounded-lg mb-4 lg:mb-0">
+            <div className="cursor-pointer flex flex-col px-4 lg:hover:shadow py-10 w-40 h-auto rounded-lg mb-4 lg:mb-0 hover:bg-gray-200">
               <div className="pb-3 self-center">
                 <img className="process-image-styles" src={RD} alt="" />
               </div>
@@ -58,7 +58,7 @@ const Process = () => {
             offset={-50}
             duration={500}
           >
-            <div className="cursor-pointer flex flex-col px-4 py-10 shadow w-40 h-auto rounded-lg mb-4 lg:mb-0">
+            <div className="cursor-pointer flex flex-col px-4 py-10 lg:hover:shadow w-40 h-auto rounded-lg mb-4 lg:mb-0 hover:bg-gray-200">
               <div className="pb-3 self-center">
                 <img className="process-image-styles" src={Ideation} alt="" />
               </div>
@@ -75,7 +75,7 @@ const Process = () => {
             offset={-50}
             duration={500}
           >
-            <div className="cursor-pointer flex flex-col px-4 py-10 shadow w-40 h-auto rounded-lg mb-4 lg:mb-0">
+            <div className="cursor-pointer flex flex-col px-4 py-10 lg:hover:shadow w-40 h-auto rounded-lg mb-4 lg:mb-0 hover:bg-gray-200">
               <div className="pb-3 self-center">
                 <img className="process-image-styles" src={Hifi} alt="" />
               </div>
@@ -92,7 +92,7 @@ const Process = () => {
             offset={-50}
             duration={500}
           >
-            <div className="cursor-pointer flex flex-col px-4 py-10 shadow w-40 h-auto rounded-lg mb-4 lg:mb-0">
+            <div className="cursor-pointer flex flex-col px-4 py-10 lg:hover:shadow w-40 h-auto rounded-lg mb-4 lg:mb-0 hover:bg-gray-200">
               <div className="pb-3 self-center">
                 <img className="process-image-styles" src={Development} alt="" />
               </div>
@@ -109,7 +109,7 @@ const Process = () => {
             offset={-50}
             duration={500}
           >
-            <div className="cursor-pointer flex flex-col px-4 py-10 shadow w-40 h-auto rounded-lg mb-4 lg:mb-0">
+            <div className="cursor-pointer flex flex-col px-4 py-10 lg:hover:shadow w-40 h-auto rounded-lg mb-4 lg:mb-0 hover:bg-gray-200">
               <div className="pb-3 self-center">
                 <img className="process-image-styles" src={Measure} alt="" />
               </div>

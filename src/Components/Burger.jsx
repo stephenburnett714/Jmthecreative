@@ -1,8 +1,18 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import NavMenu from './NavMenu'
+import jmlogo from "../Images/jmlogoblack.png";
 
+const Logo = styled.div`
+position: fixed;
+z-index: 20;
+left: 25px;
+top: 25px;
 
+@media screen and (min-width: 1023.1px){
+  display: none
+}
+`
 const StyledBurger = styled.div`
 width:2rem;
 height: 2rem;
@@ -49,6 +59,9 @@ export default function Burger() {
 
     return (
         <>
+        <Logo>
+            <div><img src={jmlogo} alt=""/></div>
+        </Logo>
         <StyledBurger open={open} onClick={() => setOpen(!open)}>
             <div />
             <div />

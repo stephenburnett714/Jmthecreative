@@ -142,7 +142,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="flex justify-center md:justify-end">
+            <div className="flex justify-center md:justify-end pt-4 lg:p-0">
               <img src={jmexplosion} alt="" />
             </div>
           </div>
@@ -167,7 +167,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="flex justify-center md:justify-end">
+            <div className="flex justify-center md:justify-end pt-4 lg:p-0">
               <img src={jmthumb} alt="" />
             </div>
           </div>
