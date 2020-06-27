@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from './Navbar'
+import Navbar from './NavbarInverse'
 import jmpen from "../Images/JmRectangle.png";
 import jmdrawing from '../Images/JmDrawing.png'
 import { useEffect } from "react";
@@ -13,8 +13,9 @@ const About = () => {
   });
 
   return (
+    
     <div>
-      <Navbar />
+<Navbar />
       {/* _______________ */}
       {/* JM The Creative */}
       {/* _______________ */}

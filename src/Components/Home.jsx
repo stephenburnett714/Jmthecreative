@@ -71,7 +71,7 @@ const Home = () => {
         {/* _____________ */}
         <div className="px-12 lg:px-32 pt-16">
           <div className="md:grid md:grid-cols-2">
-            <div className="py-16 flex flex-col self-center">
+            <div className="py-16 flex flex-col self-center pr-5">
               <div className="text-4xl pb-4">Keeping things user-centered</div>
               <div className="text-xl">
                 Great User Experience is a product of really good design, it is
@@ -80,40 +80,44 @@ const Home = () => {
             </div>
 
             <div className="py-16">
-              <div className="flex items-center">
-                <div className="w-16">
+              <div className="grid grid-cols-8 md:grid-cols-9">
+                <div className="hidden md:flex"></div>
+                <div className="flex align-items-center">
                   <img className="pr-4" src={check} alt="" />
                 </div>
-                <div className="text-xl py-2">
+                <div className="text-xl py-2 col-span-7">
                   Benefit from building user base of brand advocates
                 </div>
               </div>
 
-              <div className="flex items-center">
-                <div className="w-16">
+              <div className="grid grid-cols-8 md:grid-cols-9">
+                <div className="hidden md:flex"></div>
+                <div className="flex align-items-center">
                   <img className="pr-4" src={check} alt="" />
                 </div>
-                <div className="text-xl py-2">
+                <div className="text-xl py-2 col-span-7">
                   Make the best possible decisions by testing prototypes with
                   REAL users!
                 </div>
               </div>
 
-              <div className="flex items-center">
-                <div className="w-16">
+              <div className="grid grid-cols-8 md:grid-cols-9">
+                <div className="hidden md:flex"></div>
+                <div className="flex align-items-center">
                   <img className="pr-4" src={check} alt="" />
                 </div>
-                <div className="text-xl py-2">
+                <div className="text-xl py-2 col-span-7">
                   Save tons of money on engineering by having developers build
                   on a well thought out design
                 </div>
               </div>
 
-              <div className="flex items-center">
-                <div>
+              <div className="grid grid-cols-8 md:grid-cols-9">
+                <div className="hidden md:flex"></div>
+                <div className="flex align-items-center">
                   <img className="pr-4" src={check} alt="" />
                 </div>
-                <div className="text-xl py-2">
+                <div className="text-xl py-2 col-span-7">
                   Maximize valuable engineering time and avoid re-working ideas
                   that can be validated sooner
                 </div>
@@ -155,11 +159,13 @@ const Home = () => {
           <div className="md:grid md:grid-cols-2">
             <div className="flex flex-col justify-center content-center md:w-4/5">
               <div>
-                <div className="text-4xl pb-4">
-                JM The Creative
-                </div>
+                <div className="text-4xl pb-4">JM The Creative</div>
                 <div className="text-xl pb-4">
-                With 5+ years of experience in helping founders to communicate their vision for digital products. Jonathan leverages user-centered design approaches that focus on improving the user journey through a web/mobile app experience with the intention of increasing the quality of the user interaction.
+                  With 5+ years of experience in helping founders to communicate
+                  their vision for digital products. Jonathan leverages
+                  user-centered design approaches that focus on improving the
+                  user journey through a web/mobile app experience with the
+                  intention of increasing the quality of the user interaction.
                 </div>
                 <NavLink exact activeClass="active" to="/about">
                   <div className="text-blue-500">More About JM</div>

@@ -10,8 +10,7 @@ justify-content: center;
 
 
 li {
-    padding: 22px 15px;
-    font-size: x-large;
+    padding: 22px 10px;
 }
 
 
@@ -23,7 +22,7 @@ display: none;
 @media (max-width: 1023.1px){ 
     
     flex-flow: column nowrap;
-    background-color: white;
+    background-color: black;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)': 'translateX(100%)'};
     top: 0;
@@ -34,6 +33,7 @@ display: none;
     align-items:center;
     transition: transform .3s ease-in-out;
 }
+
 `;
 
 export default function NavMenu(props) {
@@ -42,24 +42,23 @@ export default function NavMenu(props) {
     const open = props.open
 
     return (
-        <Ul  open={props.open}>
-            <div></div>
-            <NavLink exact to={'/'}>
-                <li onClick={() => setOpen(!open)} className="text-black text-2xl">Home</li>
+        <Ul open={props.open}>
+            <NavLink  exact to={'/'}>
+                <li onClick={() => setOpen(!open)} className="text-white text-2xl">Home</li>
             </NavLink>
 
-            <NavLink exact to={'/about'}>
-                <li onClick={() => setOpen(!open)} className="text-black text-2xl">About</li>
+            <NavLink  exact to={'/about'}>
+                <li onClick={() => setOpen(!open)} className="text-white text-2xl">About</li>
             </NavLink>
 
             <NavLink exact to={'/work'}
                 >
-                <li onClick={() => setOpen(!open)} className="text-black text-2xl">Work</li>
+                <li onClick={() => setOpen(!open)} className="text-white text-2xl">Work</li>
             </NavLink>
 
             <NavLink exact to={'/process'}
                 >
-                 <li onClick={() => setOpen(!open)} className="text-black text-2xl">Process</li>
+                 <li onClick={() => setOpen(!open)} className="text-white text-2xl">Process</li>
             </NavLink>
 
             <NavLink to={'/'}

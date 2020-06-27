@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from './NavbarInverse'
 import RD from "../Images/R&D.png";
 import Ideation from "../Images/Ideation.png";
 import Hifi from "../Images/Hifi.png";
@@ -45,7 +45,7 @@ const Process = () => {
               <div className="pb-3 self-center">
                 <img className="process-image-styles" src={RD} alt="" />
               </div>
-              <div className="text-center">Research/ Discovery</div>
+              <div className="text-center text-xl">Research/ Discovery</div>
             </div>
           </Link>
 
@@ -62,7 +62,7 @@ const Process = () => {
               <div className="pb-3 self-center">
                 <img className="process-image-styles" src={Ideation} alt="" />
               </div>
-              <div className="text-center">Ideation/ Brainstorming</div>
+              <div className="text-center text-xl">Ideation/ Brainstorming</div>
             </div>
           </Link>
 
@@ -79,7 +79,7 @@ const Process = () => {
               <div className="pb-3 self-center">
                 <img className="process-image-styles" src={Hifi} alt="" />
               </div>
-              <div className="text-center">Hi-Fi Design/ Prototyping</div>
+              <div className="text-center text-xl">Hi-Fi Design/ Prototyping</div>
             </div>
           </Link>
 
@@ -96,7 +96,7 @@ const Process = () => {
               <div className="pb-3 self-center">
                 <img className="process-image-styles" src={Development} alt="" />
               </div>
-              <div className="text-center">Development/ Handoff</div>
+              <div className="text-center text-xl">Development/ Handoff</div>
             </div>
           </Link>
 
@@ -113,7 +113,7 @@ const Process = () => {
               <div className="pb-3 self-center">
                 <img className="process-image-styles" src={Measure} alt="" />
               </div>
-              <div className="text-center">Measure/ Iteration</div>
+              <div className="text-center text-xl">Measure/ Iteration</div>
             </div>
           </Link>
         </div>

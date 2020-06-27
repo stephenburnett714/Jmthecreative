@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import NavMenu from './NavMenu'
-import jmlogo from "../Images/jmlogoblack.png";
+import NavMenu from './NavMenuInverse'
+import jmlogo from "../Images/jmlogowhite.png";
 import { NavLink } from "react-router-dom";
 
 const Logo = styled.div`
@@ -30,7 +30,7 @@ z-index: 20;
 div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? 'black' : 'white'};
+    background-color: ${({ open }) => open ? 'white' : 'black'};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all linear .3s;
@@ -62,13 +62,12 @@ export default function Burger() {
 
     return (
         <>
-        <div>
         <NavLink exact to={"/"}>
         <Logo open={open}>
             <div><img src={jmlogo} alt=""/></div>
         </Logo>
         </NavLink>
-        </div>
+        
         <StyledBurger open={open} onClick={() => setOpen(!open)}>
             <div />
             <div />

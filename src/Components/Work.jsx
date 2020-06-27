@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from './NavbarInverse'
 import gymmly from "../Images/gymmly.png";
 import unirever from "../Images/unirever.png";
 import optimal from '../Images/optimal.png'
